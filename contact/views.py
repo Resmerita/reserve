@@ -26,13 +26,12 @@ class ContactView(View):
             message = "\n".join(body.values())
             print(settings.DEFAULT_FROM_EMAIL, settings.EMAIL_HOST_USER)
             try:
-                a = 1
-                # send_mail(
-                #    subject,
-                #    message,
-                #    settings.DEFAULT_FROM_EMAIL,
-                #   [body["email"]],
-                # )
+                send_mail(
+                    subject,
+                    message,
+                    settings.DEFAULT_FROM_EMAIL,
+                    [body["email"]],
+                )
             except BadHeaderError:
                 return HttpResponse("Invalid header found.")
             return redirect("contact:contact")
