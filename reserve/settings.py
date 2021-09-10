@@ -80,11 +80,11 @@ WSGI_APPLICATION = "reserve.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "daeur83v053f02",
-        "HOST": "ec2-50-19-176-236.compute-1.amazonaws.com",
+        "NAME": "d4ubkmce2ii2n1",
+        "HOST": "ec2-3-237-55-96.compute-1.amazonaws.com",
         "PORT": 5432,
-        "USER": "fegboljvoqzlsd",
-        "PASSWORD": "c94a61a980af184635c245dc32da486646098ce1e704ce791e327d242c00e618",
+        "USER": "perqlscpyssljf",
+        "PASSWORD": "de7fee4e0d3f6b57717eeedb3f6d0385e04ff8d3c09f98330332e439aa33058f",
     }
 }
 
