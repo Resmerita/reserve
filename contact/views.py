@@ -24,7 +24,7 @@ class ContactView(View):
                 "message": form.cleaned_data["message"],
             }
             message = "\n".join(body.values())
-            print(settings.DEFAULT_FROM_EMAIL, settings.EMAIL_HOST_USER)
+
             try:
                 send_mail(
                     subject,
