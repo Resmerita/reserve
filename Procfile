@@ -1,1 +1,1 @@
-web: gunicorn reserve.wsgi
+web: gunicorn reserve.wsgi:application
